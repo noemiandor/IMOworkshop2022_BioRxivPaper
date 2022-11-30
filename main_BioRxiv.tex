@@ -1,5 +1,6 @@
 \documentclass[times,twoside]{zHenriquesLab-StyleBioRxiv}
 \renewcommand{\familydefault}{\sfdefault}
+\usepackage{wrapfig} % Allows in-line images
 \usepackage[round]{natbib}
 \setcitestyle{numbers,open={ (},close={)}}
 % \usepackage[superscript]{cite}
@@ -19,6 +20,10 @@
 \usepackage{booktabs}
 
 
+\renewcommand \thesection{\arabic{section}}
+\renewcommand \thesubsection{\arabic{section}.\arabic{subsection}}
+
+
 %===== COMMENTS \& NOTES =============
 \usepackage[margin=true,inline=false,index=true]{fixme}
 \fxsetup{
@@ -36,9 +41,7 @@
 \usepackage{tikz}
 \usetikzlibrary{automata,positioning,shapes.geometric}
 \usepackage{cleveref}
-\renewcommand\thesubsection{\Roman{subsection}}
 
-\renewcommand\thesubsubsection{\Alph{subsubsection}}
 
 %=== COMMAND DEFINITIONS
 \def \figPath{figs/}
@@ -70,12 +73,38 @@ Aim 3: Evaluate how age and metabolic “rejuvenation” strategies affect the p
 
 Impact.   Together we expect these aims to contribute to a better understanding of how microenvironment resources shape the community of GBM cells of varied ploidy and how to best modulate host physiology to delay recurrence and progression.
 
-\section*{RESULTS}
-\subsection*{Ploidy, Oxygen and Glucose in aged and young environments}
+\section{METHODS}
 
-\subsection*{ODE model of Glucose dependent migration} 
+\subsection{Statistical analysis} 
+Aneuploidy score, genome doublings: 10.1016/j.ccell.2018.03.007
 
-\subsection*{Stochastic State-Space Model of the Brain} 
+Gene expression data - mRNA expression z-scores relative to diploid samples (RNA Seq V2 RSEM): cbioportal, accessed on 02.11.2022
+
+Oxygenation status of organs/tissues: PMID: 32786046, 30899601
+
+Where ranges were provided (e.g.: kidney cortex 45-50), mean value was selected from given range (e.g. 47.5). Where possible, reference was taken from PMID: 32786046 as a resource with more normal tissues; PMID: 30899601 was selected if the tissue was missing or less precise in the first source
+
+\subsection{ODE model} 
+
+\subsection{Stochastic State-Space Model} 
+
+\section{RESULTS}
+\subsection{Ploidy, Oxygen and Glucose in aged and young environments}
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{figs/Fig1.png}
+\caption{\textbf{Age associated molecular, metabolic and functional changes.}
+A) XX.
+B) XX.
+C) XX.
+D) XX.
+} 
+\label{fig:stats}
+\end{figure}
+
+\subsection{ODE model of Glucose dependent migration} 
+
+\subsection{Stochastic State-Space Model of the Brain} 
 
 \section*{DISCUSSION}
 

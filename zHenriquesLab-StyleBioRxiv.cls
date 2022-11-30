@@ -85,7 +85,7 @@
 \RequirePackage{cleveref}
 \crefname{equation}{Eq. S}{equations}
 \crefname{figure}{Fig.}{figures}
-\crefname{section}{Sup. Note}{notes}
+% \crefname{section}{Sup. Note}{notes}
 % \crefname{chapter}{Chapter}{Chapters}
 % \crefname{section}{Section}{Sections}
 % \crefname{subsection}{Section}{Sections}
@@ -225,7 +225,7 @@
   {\large\sffamily\bfseries}
   {}
   {0em}
-  {Supplementary Note \thesection: #1}
+  { \thesection. #1}
   []
 \titleformat{name=\section,numberless}
   {\large\sffamily\bfseries}
